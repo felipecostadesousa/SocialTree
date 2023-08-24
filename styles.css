@@ -1,0 +1,82 @@
+:root {
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--body-bg-color);
+    display: flex;
+}
+
+.main{
+    width: 100%;
+    max-width: 588px;
+    margin: 200px auto 0px;
+    padding: 0 24px;
+}
+
+.profile_image{
+    text-align: center;
+    padding: 24px;
+}
+
+.profile_image img{
+    border-radius: 50%;
+    padding: 4px;
+    border: 2px solid var(--purple);
+}
+
+#text1{
+    text-align: center;
+}
+
+.text_instagram a{
+    color: var(--purple);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0;
+}
+
+.list_links a{
+    text-decoration: none;
+    color: var(--purple);
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid var(--purple);
+    display: flex;
+    border-radius: 4px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_links{
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+}
+
+.social_links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social_links img{
+    margin: 24px;
+}
