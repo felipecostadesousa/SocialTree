@@ -13,18 +13,22 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--body-bg-color);
     display: flex;
+    height: 100vh;
 }
 
 .main{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
     width: 100%;
     max-width: 588px;
-    margin: 200px auto 0px;
+    margin: auto;
     padding: 0 24px;
 }
 
 .profile_image{
     text-align: center;
-    padding: 24px;
+    padding-bottom: 24px;
 }
 
 .profile_image img{
@@ -33,7 +37,8 @@ body{
     border: 2px solid var(--purple);
 }
 
-#text1{
+.text_instagram{
+    width:100%;
     text-align: center;
 }
 
@@ -58,25 +63,23 @@ ul{
     font-size: 16px;
     font-weight: 600;
     border: 2px solid var(--purple);
-    display: flex;
     border-radius: 4px;
-    padding: 16px 24px;
+    padding: 16px 0px;
+    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .social_links{
     display: flex;
-    font-size: 24px;
-    justify-content: center;
-}
-
-.social_links a{
-    display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 .social_links img{
     margin: 24px;
+}
+
+@media (max-width: 640px) {
+    .social_links img{
+        margin: 12px;
+    }
 }
